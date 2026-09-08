@@ -637,6 +637,28 @@
                 }
               }
       );
+
+      const truckTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".cost-visual",
+          start: "top 80%", // Запуск, когда блок покажется снизу экрана на 20%
+          toggleActions: "play none none none"
+        }
+      });
+
+      truckTl.fromTo(
+              ".route-line",
+              { scaleX: 0 },
+              { scaleX: 1, duration: 2, ease: "power2.out" },
+              0
+      );
+
+      truckTl.fromTo(
+              ".cost-visual img",
+              { x: "-120%" },
+              { x: "0%", duration: 2, ease: "power2.out" },
+              0
+      );
     });
   </script>
 </body>
