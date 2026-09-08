@@ -364,7 +364,7 @@ h1 {
 }
 
 .process-card {
-  min-height: 139px;
+  min-height: 135px;
   display: grid;
   grid-template-columns: 68px 1fr;
   align-items: start;
