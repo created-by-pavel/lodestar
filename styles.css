@@ -442,7 +442,7 @@ h1 {
   }
 
   .process-card p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -490,7 +490,7 @@ h1 {
   }
 
   .process-card p {
-    margin-top: 22px;
+    margin-top: 28px;
   }
 }
 
@@ -664,7 +664,22 @@ h1 {
     font-size: 13px;
   }
 
-  .calculator-form input::placeholder {
+  .calculator-form input {
+    min-width: 0;
+    border: 0;
+    border-bottom: 1px solid darkgrey;
+    outline: 0;
+    background: transparent;
+    padding: 0 18px;
+    text-align: center;
+    font: inherit;
+    font-size: 17px;
+    color: #222;
+  }
+
+  .file-input {
+    min-width: 0;
+    height: 43px;
     border-bottom: 1px solid darkgrey;
   }
 }
